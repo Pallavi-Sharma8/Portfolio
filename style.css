@@ -1,0 +1,242 @@
+* {
+  background-color: rgb(38, 37, 37);
+ 
+}
+.navbar {
+  background-color:  rgb(198, 124, 6);
+  display: grid;
+  grid-template-columns:  100px 800px 100px 100px 100px 100px 100px;
+  justify-content: center;
+ position: static;
+}
+#logo {
+  width: 50px;
+  border-radius: 50%;
+  grid-column: 1;
+}
+#first-heading {
+  grid-column: 2;
+  display: inline;
+  background-color:rgb(198, 124, 6);
+  color: rgb(96 14 14);
+text-shadow: 0 0 10px rgb(198, 190, 190);
+font-size: 45px;
+
+  
+}
+.h2-elements {
+  background-color: rgb(198, 124, 6);
+  opacity: 0;
+  transform: rotateY('90deg');
+  animation: animate 1s linear forwards;
+}
+@keyframes animate {
+  0% {
+opacity: 0;
+  }
+  100% {
+opacity: 1;
+  }
+}
+h2 span:nth-child(1) {
+  animation-delay: .3s;
+}
+h2 span:nth-child(2) {
+  animation-delay: .5s;
+}
+h2 span:nth-child(3) {
+  animation-delay: .7s;
+}
+h2 span:nth-child(4) {
+  animation-delay: .9s;
+}
+h2 span:nth-child(5) {
+  animation-delay: 1.1s;
+}
+h2 span:nth-child(6) {
+  animation-delay: 1.3s;
+}
+h2 span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+h2 span:nth-child(8) {
+  animation-delay: 1.7s;
+}
+h2 span:nth-child(9) {
+  animation-delay: 1.9s;
+}
+h2 span:nth-child(10) {
+  animation-delay: 2.1s;
+}
+h2 span:nth-child(11) {
+  animation-delay: 2.3s;
+}
+h2 span:nth-child(12) {
+  animation-delay: 2.5s;
+}
+h2 span:nth-child(13) {
+  animation-delay: 2.7s;
+}
+h2 span:nth-child(14) {
+  animation-delay: 2.9s;
+}
+h2 span:nth-child(15) {
+  animation-delay: 3.1s;
+}
+
+.navbar-elements {
+  text-decoration: none;
+  color: black;
+ text-align: center;
+ margin-top: 10px;
+ background-color: rgb(198, 124, 6);
+font-weight: bold;
+}
+a:hover {
+  
+  color: rgb(9, 234, 16);
+  cursor: pointer;
+
+
+}
+.footer-m {
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.5s;
+text-align: center;
+color: gray;
+
+}
+.footer-m:hover span:nth-child(2){
+ margin-left: 30px;
+}
+.footer-m:hover span:nth-child(1){
+  margin-right: 5px;
+ }
+ .footer-m:hover span:nth-child(1)::after{
+content: "'";
+ }
+ .footer-m:hover span{
+ color: aliceblue;
+ text-shadow: 0 0 10px aliceblue,
+              0 0 20px rgb(21, 21, 21),
+              0 0 40px aliceblue,
+              0 0 80px aliceblue,
+              0 0 120px aliceblue;
+ }
+ #main-pic {
+
+  width: 500px;
+  border-radius: 10px;
+ margin-right: 0px;
+ margin-top: 50px;
+  grid-column: 2;
+
+ }
+
+.main-text {
+  grid-row: 1;
+  grid-column: 1;
+  font-size: 60px;
+  color: rgb(229, 153, 30);
+  font-weight: bold;
+  margin-top: 140px;
+ margin-left: 20px;
+ font-family: Nabla;
+ text-shadow: 0 0 10px rgb(6, 6, 6);
+
+ }
+ .mainlogo-container {
+  display: grid;
+  grid-template-columns: 900px 600px;
+  height: 500px;
+  grid-template-rows: 500px 100px;
+
+ }
+ #maintextspan1 {
+text-shadow: 0 0 10px red;
+ }
+ #profession-text{
+  text-shadow: 0 0 10px blueviolet;
+ }
+ #profession-text::before{
+ 
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+width: 400px;
+height: 80px;
+background-color: rgb(38, 37, 37);
+border-left: 2px solid whitesmoke;
+animation: profession 3s  infinite backwards ;
+ }
+@keyframes profession {
+  0% {
+    left: 15%;
+  }
+  /* 40%, 60% {
+  left: 50%;
+  } */
+  100% {
+    left: 42%; 
+  }
+  /* 40% {
+
+  } */
+}
+
+
+
+ .page2-skills-container{
+  border: 2px solid white;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 300px 200px;
+  width: 800px;
+  height: 500px;
+margin-left: 300px;
+border-radius: 35px;
+column-gap: 62px;
+align-content: center;
+background-color: rgb(255, 154, 13);
+margin-top: 100px;
+ }
+.page2-skills{
+  border: 2px dotted beige ;
+  border-radius: 50px;
+  width: 150px;
+  grid-row: 2;
+  background-color: brown;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-style: bold;
+  justify-items: center;
+  word-wrap: break-word;
+  padding: 20px;
+}
+#page2-skillhead{
+height: 200px;
+grid-row: 1;
+border: 2px dotted beige ;
+  border-radius: 50px;
+  width: 400px;
+  margin-left: 200px;
+  margin-top: 10px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 50px;
+ 
+}
+.page2-skills:hover{
+ box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+#page2-skill2{
+  font-size: 30px;
+}
+#main-break{
+ height: 10px;
+  background-color: rgb(124, 130, 130);
+  margin-top: 50px;
+}
